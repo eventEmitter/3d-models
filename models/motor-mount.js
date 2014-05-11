@@ -24,12 +24,12 @@ function main() {
     var screwHole = union(
         CSG.cylinder({                     
               start         : [0, -2, 0]
-            , end           : [0, 17, 0]
+            , end           : [0, 19, 0]
             , radiusStart   : 3.1
             , radiusEnd     : 2.5
             , resolution    : 20
-        }).translate([17.1,0,17])
-        , cube([6,19,17.5]).translate([14.1,-2,0])
+        }).translate([16.8,-1,17])
+        , cube([6,21,17.5]).translate([13.8,-3,0])
     );
     
     
@@ -39,7 +39,7 @@ function main() {
         CSG.cylinder({                     
               start         : [0, 0, 0]
             , end           : [0, 50, 0]
-            , radius        : 4
+            , radius        : 4.15
             , resolution    : 6
         }).rotateX(90).translate([25.5,-11,6])
         ,  CSG.cylinder({                     
